@@ -1,6 +1,6 @@
 # Customized Jupyter scipy-notebook
 
-Personalized version of <<put dockerhub link>>
+Personalized version of https://hub.docker.com/r/jupyter/scipy-notebook/
 with added:
 
 - Jupyterlab extensions:  git, toc, nbdime

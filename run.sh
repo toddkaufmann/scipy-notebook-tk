@@ -73,7 +73,7 @@ fi
 
 cat <<EOF
  .. watch the logs .. you will need the token to log in, 
- ..  then go to   JUPYTER_SERVER_URL
+ ..  then go to   $JUPYTER_SERVER_URL
  ..     ^C to exit any time after that.
 =============================================================================
 EOF

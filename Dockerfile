@@ -1,6 +1,7 @@
 
 #FROM jupyter/minimal-notebook
-FROM jupyter/scipy-notebook
+# 57f8546c0386 = 2019-04-25
+FROM jupyter/scipy-notebook:57f8546c0386
 
 # ??
 #   first this -- update jupyterlab to 0.35.x (req for -toc)

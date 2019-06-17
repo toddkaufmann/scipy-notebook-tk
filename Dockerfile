@@ -1,7 +1,8 @@
 
 #FROM jupyter/minimal-notebook
 # 57f8546c0386 = 2019-04-25
-FROM jupyter/scipy-notebook:57f8546c0386
+# d4cbf2f80a2a = 2019-06-01
+FROM jupyter/scipy-notebook:d4cbf2f80a2a
 
 MAINTAINER Todd Kaufmann <dockers.scipy@t-k.org>
 LABEL Description="standard jupyterlab/scipy and my curated extensions"

@@ -1,15 +1,21 @@
 
+# Tags listed at:
+# 
 #FROM jupyter/minimal-notebook
 # 57f8546c0386 = 2019-04-25
 # d4cbf2f80a2a = 2019-06-01
-FROM jupyter/scipy-notebook:d4cbf2f80a2a
+# 1386e2046833 = 2019-09-11
+#  jupyterlab                1.1.3                      py_0    conda-forge
+#  jupyterlab_server         1.0.6                      py_0    conda-forge
+#
+FROM jupyter/scipy-notebook:1386e2046833
 
 MAINTAINER Todd Kaufmann <dockers.scipy@t-k.org>
 LABEL Description="standard jupyterlab/scipy and my curated extensions"
 
 # 
 # Extension notes:
-#   first this -- update jupyterlab to 0.35.x (req for -toc)
+# OLD #   first this -- update jupyterlab to 0.35.x (req for -toc)
 #   67  conda update -c conda-forge jupyterlab
 #
 # also order of extensions can matter; read appropriate docs for interdependencies

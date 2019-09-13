@@ -56,7 +56,15 @@ I run it like this (roughly):
 	 toddkaufmann/scipy-notebook-tk
 
 This makes `data/` in current folder available as `/data` to docker / your notebooks,
-and 'work/' will be the default directory that jupyterlab is in on startup.
+and 'work/' will be the current working directory that jupyterlab is in on startup.
+
+This way, all my work (data + notebooks & code) are outside the container.
+I can remove or update the container without losing my work.
+My environment (the python version, library, and modules) are locked in the container.
+If I load/update modules here and break my environment somehow,
+I can start again from the docker image.
+I can run this image anywhere docker runs and not have to worry about the Python version, pip/conda installs, permissions, etc.
+If I get attached to my environment, I can 'docker commit' to create a new image.
 
 See `run.sh` as an example.
 

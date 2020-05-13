@@ -8,7 +8,10 @@
 #  jupyterlab                1.1.3                      py_0    conda-forge
 #  jupyterlab_server         1.0.6                      py_0    conda-forge
 #
-FROM jupyter/scipy-notebook:1386e2046833
+# jupyter/scipy-notebook
+# 1386e2046833 04-25
+# f3da74a3da1e  = 2020-03-06
+FROM jupyter/scipy-notebook:f3da74a3da1e
 
 MAINTAINER Todd Kaufmann <dockers.scipy@t-k.org>
 LABEL Description="standard jupyterlab/scipy and my curated extensions"

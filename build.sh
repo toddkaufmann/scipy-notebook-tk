@@ -1,4 +1,14 @@
 #!/bin/sh
+# run like:
+# time ./build.sh |& tee $(logfile docker-build-it).log
+# (note you might want to do pull first/separately because of all the progress bar output)
+
+# TODO
+# pull separate
+# add logging here directly
+# wrap build with 'if' so we can do 'set -eu'
+# [ -f VERSION ]
+
 # -eu
 
 TAG=toddkaufmann/scipy-notebook-tk

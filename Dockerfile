@@ -1,5 +1,5 @@
 
-# Tags listed at:
+# Tags listed at: https://hub.docker.com/r/jupyter/scipy-notebook/tags/
 # 
 #FROM jupyter/minimal-notebook
 # 57f8546c0386 = 2019-04-25
@@ -10,8 +10,20 @@
 #
 # jupyter/scipy-notebook
 # 1386e2046833 04-25
-# f3da74a3da1e  = 2020-03-06
-FROM jupyter/scipy-notebook:f3da74a3da1e
+# f3da74a3da1e = 2020-03-06
+# 3b1f4f5e6cc1 = 2020-05-13
+FROM jupyter/scipy-notebook:3b1f4f5e6cc1
+
+# # Description from
+# jupyter/scipy-notebook includes popular packages from the scientific Python ecosystem.
+# 
+# - Everything in jupyter/minimal-notebook and its ancestor images
+# - dask, pandas, numexpr, matplotlib, scipy, seaborn, scikit-learn,
+#   scikit-image, sympy, cython, patsy, statsmodel, cloudpickle, dill,
+#   numba, bokeh, sqlalchemy, hdf5, vincent, beautifulsoup, protobuf,
+#   xlrd, bottleneck, and pytables packages
+# - ipywidgets and ipympl for interactive visualizations and plots in Python notebooks
+# - Facets for visualizing machine learning datasets
 
 MAINTAINER Todd Kaufmann <dockers.scipy@t-k.org>
 LABEL Description="standard jupyterlab/scipy and my curated extensions"

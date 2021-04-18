@@ -12,7 +12,8 @@
 # 1386e2046833 04-25
 # f3da74a3da1e = 2020-03-06
 # 3b1f4f5e6cc1 = 2020-05-13
-FROM jupyter/scipy-notebook:3b1f4f5e6cc1
+# 5cb007f03275 = 2021-01-28
+FROM jupyter/scipy-notebook:5cb007f03275
 
 # # Description from
 # jupyter/scipy-notebook includes popular packages from the scientific Python ecosystem.
@@ -57,6 +58,7 @@ RUN echo checking if you got any lab first .... && \
 # I had a copy for debug purposes
 # COPY scipy-1226-tk2.2_start-notebook.sh  /usr/local/bin/start-notebook.sh 
 
+# .. just run as a mount
 # - my session stuff
 # WORKDIR /root
 # COPY ../session/docker-hist .
